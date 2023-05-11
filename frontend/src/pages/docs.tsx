@@ -1,11 +1,11 @@
 import Header from '../components/header';
 import Navbar from '../components/navbar/main';
 import Link from 'next/link';
-import type { EndpointData } from '../types/types';
+import type { Endpoint } from '../types/types';
 import { useSession } from 'next-auth/react';
 
 interface Props {
-  endpoints: Array<EndpointData>
+  endpoints: Array<Endpoint>
 }
 
 export default function Docs({ endpoints }: Props) {
@@ -170,3 +170,4 @@ export async function getServerSideProps() {
 		},
 	] } };
 }
+
